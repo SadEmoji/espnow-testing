@@ -1,6 +1,7 @@
 #pragma once
 
-#include <HotButton.h>
+#include <Arduino.h>
 
-#define BUTTON 0
+#define BTN 0
 
+void butt();

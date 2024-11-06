@@ -1,3 +1,10 @@
 #include "button.h"
+#include "led.h"
 
-HotButton button(BUTTON);
+void butt() {
+
+if (digitalRead(BTN) == LOW) {
+        ledblink();
+     } 
+
+}
