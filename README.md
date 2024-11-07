@@ -3,6 +3,8 @@
 
 Just testing espNOW - it´s not doing much right now.
 
+Simple broadcast buttonpress to get a led to blink on the other boards.
+
 <hr>
 
 The board is waveshare esp32-s3-zero
