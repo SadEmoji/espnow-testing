@@ -16,11 +16,17 @@ void setup() {
     delay(5000);
     Serial.begin(9600);
 
+    //button
+    pinMode(BTN, INPUT_PULLUP);
+
     //wifi start
     esp_wifi_start();
 
     //get mac
     getMac();
+
+    //init espNOW
+    initESPN();
 
     //end of setup led status
     ledblinkstart();

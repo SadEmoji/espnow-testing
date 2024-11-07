@@ -39,6 +39,10 @@ void receiveCallback(const uint8_t *macAddr, const uint8_t *data, int dataLen)
  
   // Make sure we are null terminated
   buffer[msgLen] = 0;
+    if (strncmp(buffer, "btnon", 5) == 0) {
+    ledblink();
+  }
+  
  
   // Format the MAC address
   char macStr[18];

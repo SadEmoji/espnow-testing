@@ -1,12 +1,14 @@
 #include "button.h"
 #include "led.h"
+#include "espnow.h"
 
-pinMode(BTN, INPUT_PULLUP);
+
 
 void butt() {
-
 if (digitalRead(BTN) == LOW) {
-        ledblink();
-     } 
-
+        broadcast("btnon");
+        delay(500);
+     } else {
+        //something?
+     }
 }
