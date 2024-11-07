@@ -1,1 +1,0 @@
-REQUIRES esp_wifi
