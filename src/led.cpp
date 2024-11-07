@@ -22,11 +22,11 @@ void ledblink() {
 }
 
 void ledblinkstart() {
-  neopixelWrite(RGB_BUILTIN,0,RGB_BRIGHTNESS,0); // Green
+  neopixelWrite(RGB_BUILTIN,RGB_BRIGHTNESS,0,0); // Green
   delay(100);
   neopixelWrite(RGB_BUILTIN,0,0,0); // Off / black
   delay(500);
-  neopixelWrite(RGB_BUILTIN,0,RGB_BRIGHTNESS,0); // Green
+  neopixelWrite(RGB_BUILTIN,RGB_BRIGHTNESS,0,0); // Green
   delay(100);
   neopixelWrite(RGB_BUILTIN,0,0,0); // Off / black
 }

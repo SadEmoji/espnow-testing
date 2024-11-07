@@ -12,18 +12,19 @@
 
 
 void setup() {
-    //delay before anything to see everythin i debug, remove in final
+    //delay before anything to see everythin in debug, remove in final
     delay(5000);
     Serial.begin(9600);
-
-    //button
-    pinMode(BTN, INPUT_PULLUP);
 
     //wifi start
     esp_wifi_start();
 
+    //get mac
+    getMac();
+
     //end of setup led status
     ledblinkstart();
+    Serial.println("Setup is done");
     //now loop
 }
 
